@@ -18,4 +18,11 @@ public class MainTest {
 	ClassB objB = injector.get(ClassB.class);
 	assertNotNull(objB);
     }
+    
+    @Test
+    public void testC() {
+	Injector injector = new InjectorImpl();
+	ClassC objC = injector.get(ClassC.class);
+	assertNotNull(objC);
+    }
 }
